@@ -6,19 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.swaglabs.pages.BaseClass;
 import com.swaglabs.pages.LoginPage;
 import com.swaglabs.utility.BrowserFactory;
 
-public class LoginTestCRM {
+public class LoginTestCRM extends BaseClass{
 	
-WebDriver driver;
-
-@BeforeClass
-public void setUp()
-{
-	driver = BrowserFactory.StartApplication(driver,"Chrome", "https://www.saucedemo.com/");
-	
-}
 
 @Test	
 public void loginToApplication()
@@ -31,10 +24,6 @@ public void loginToApplication()
 	
 	}
 
-@AfterClass
-public void tearDown()
-{
-	BrowserFactory.quitBrowser(driver);
-}
+
 	
 }
