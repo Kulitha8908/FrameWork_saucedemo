@@ -5,19 +5,21 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class BrowserFactory {
+import com.swaglabs.pages.BaseClass;
+
+public class BrowserFactory extends BaseClass{
 
 	@SuppressWarnings("deprecation")
-	public static WebDriver StartApplication(WebDriver ldriver, String browserName, String url) {
+	public static WebDriver StartApplication(WebDriver driver, String browserName, String url) {
 		if (browserName.equals("Chrome")) {
 			System.setProperty("Webdriver.chrome.driver", "./chromedriver.exe");
-			ldriver = new ChromeDriver();
+			driver = new ChromeDriver();
 		}
-		ldriver.manage().window().maximize();
-		ldriver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		ldriver.get(url);
-		ldriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		return ldriver;
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.get(url);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		return driver;
 	}
 
 	public static void quitBrowser(WebDriver driver) {
