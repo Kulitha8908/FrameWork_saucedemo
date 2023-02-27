@@ -15,10 +15,11 @@ public class LoginTestCRM extends BaseClass {
 
 	@Test
 	public void loginToApplication() {
-
+		logger=report.createTest("Start Application");
 		LoginPage loginpage = PageFactory.initElements(driver, LoginPage.class);
+		logger.info("Application is ready to start");
 		loginpage.loginToApp(excel.getStringdata("Credentials", 0, 0), excel.getStringdata("Credentials", 0, 1));
-
+		logger.pass("Application start succefully");
 	}
 
 }
