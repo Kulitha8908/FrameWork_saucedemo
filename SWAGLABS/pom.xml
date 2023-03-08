@@ -16,7 +16,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.7.1</version>
+			<version>7.4.0</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -37,22 +37,27 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>5.2.2</version>
 		</dependency>
-
 	</dependencies>
 
-<build>
-<plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M9</version>
-        <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>XMLFiles/testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
-        </configuration>
-      </plugin>
-</plugins>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M9</version>
+				<configuration>
 
-</build>
+					<suiteXmlFiles>
+						<suiteXmlFile>XMLFiles/${xmlFiles}</suiteXmlFile>
+					</suiteXmlFiles>
+
+					<systemPropertyVariables>
+						<executionBrowser>${browser}</executionBrowser>
+						<appUrl>${urlTobeTested}</appUrl>
+					</systemPropertyVariables>	
+				</configuration> 
+			</plugin>
+		</plugins>
+	</build>
+
 </project>
