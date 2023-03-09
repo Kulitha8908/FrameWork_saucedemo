@@ -41,6 +41,7 @@ public class BaseClass {
 	@Parameters({"browser","urlTobeTested"})
 	@BeforeClass
 	public void setUp(String browser,String url) {
+		//public void setUp(String browser,String url)
 		driver = BrowserFactory.StartApplication(driver, browser, url);
 		//driver = BrowserFactory.StartApplication(driver, config.getBrowser(), config.getUrl());
 		//driver = BrowserFactory.StartApplication(driver, "Chrome", "https://www.saucedemo.com/");

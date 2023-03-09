@@ -8,12 +8,12 @@
       <![CDATA[Setting Done - test can be started --]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="19476" started-at="2023-03-08T13:25:02 GST" finished-at="2023-03-08T13:25:22 GST">
+  <suite name="Suite" duration-ms="10075" started-at="2023-03-09T20:11:25 GST" finished-at="2023-03-09T20:11:35 GST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="19476" started-at="2023-03-08T13:25:02 GST" finished-at="2023-03-08T13:25:22 GST">
+    <test name="Test" duration-ms="10075" started-at="2023-03-09T20:11:25 GST" finished-at="2023-03-09T20:11:35 GST">
       <class name="com.swaglabs.testcases.LoginTestCRM">
-        <test-method status="PASS" signature="setupSuit()[pri:0, instance:com.swaglabs.testcases.LoginTestCRM@150c158]" name="setupSuit" is-config="true" duration-ms="682" started-at="2023-03-08T13:25:02 GST" finished-at="2023-03-08T13:25:02 GST">
+        <test-method status="PASS" signature="setupSuit()[pri:0, instance:com.swaglabs.testcases.LoginTestCRM@150c158]" name="setupSuit" is-config="true" duration-ms="666" started-at="2023-03-09T20:11:25 GST" finished-at="2023-03-09T20:11:25 GST">
           <reporter-output>
             <line>
               <![CDATA[Setting up reports and Test]]>
@@ -23,15 +23,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- setupSuit -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.swaglabs.testcases.LoginTestCRM@150c158]" name="setUp" is-config="true" duration-ms="11913" started-at="2023-03-08T13:25:02 GST" finished-at="2023-03-08T13:25:14 GST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.swaglabs.testcases.LoginTestCRM@150c158]" name="setUp" is-config="true" duration-ms="5662" started-at="2023-03-09T20:11:25 GST" finished-at="2023-03-09T20:11:31 GST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:com.swaglabs.testcases.LoginTestCRM@150c158]" name="loginToApplication" duration-ms="4506" started-at="2023-03-08T13:25:14 GST" finished-at="2023-03-08T13:25:19 GST">
+        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:com.swaglabs.testcases.LoginTestCRM@150c158]" name="loginToApplication" duration-ms="2748" started-at="2023-03-09T20:11:31 GST" finished-at="2023-03-09T20:11:34 GST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabs.testcases.LoginTestCRM@150c158]" name="tearDownMethod" is-config="true" duration-ms="1779" started-at="2023-03-08T13:25:19 GST" finished-at="2023-03-08T13:25:21 GST">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.swaglabs.testcases.LoginTestCRM@150c158]" name="tearDownMethod" is-config="true" duration-ms="897" started-at="2023-03-09T20:11:34 GST" finished-at="2023-03-09T20:11:35 GST">
           <params>
             <param index="0">
               <value>
@@ -42,7 +42,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.swaglabs.testcases.LoginTestCRM@150c158]" name="tearDown" is-config="true" duration-ms="1256" started-at="2023-03-08T13:25:21 GST" finished-at="2023-03-08T13:25:22 GST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.swaglabs.testcases.LoginTestCRM@150c158]" name="tearDown" is-config="true" duration-ms="675" started-at="2023-03-09T20:11:35 GST" finished-at="2023-03-09T20:11:35 GST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
